@@ -1,0 +1,125 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg,#5c3eb8 0%,#BEADFA 99%,  #49108B 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+/* .search-box:hover {
+    transform: scale(1.05);
+} */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #49108B ;
+    border-radius: 30px;
+    overflow: hidden;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.search-box select, .search-box input {
+    border: none;
+    outline: none;
+    padding: 17px 10px;
+    font-size: 17px;
+    flex: 1;
+}
+
+.search-box select
+ {
+    background:none;
+    background:linear-gradient(#320762, #673391);
+    color:#fff;
+    border-radius: 30px ;    
+}
+
+select:focus
+{
+
+box-shadow: 0 2px 0 #000;
+border: 1px solid #ece3e3;
+outline: none;
+border-radius: 10px;
+margin: 10px;
+padding-top: 10px;
+height:auto;
+}
+
+#selections *
+{
+border-radius: 15px;
+color: blue;
+
+
+}
+.search-box input {
+    border-left: 1px solid #ccc;
+    color: #320762;
+}
+
+.search-box button {
+    background: none;
+    color:#49108B;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color:#320762;
+    color: #fff;
+}
+
+.search-box button:focus {
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    .search-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .search-container h1 {
+        font-size: 22px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .search-box select, .search-box input, .search-box button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .search-box select {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .search-box input {
+        border-left: none;
+    }
+    
+}
+footer
+{ 
+position: fixed;
+padding: 10px 10px 0px 80%;
+bottom: 0;
+width: 100%;
+height: 40px;
+background:#320762;
+color: white;
+}
